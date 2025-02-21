@@ -48,3 +48,6 @@ export default tseslint.config({
   },
 })
 ```
+# Items
+
+## Where is dispaly="bix" defined?
