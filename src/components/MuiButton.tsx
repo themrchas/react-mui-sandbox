@@ -12,11 +12,18 @@ import FormatAlignCenterIcon from '@mui/icons-material/FormatAlignCenter';
 
 export const MuiButton = () => {
 
-    const [toggleFormats, setFormats] = useState<string[]>([[]]);
+   // 
+   const [toggleFormats, setFormats] = useState<(null | string[])>();
 
     const handleFormatChange = (_event: React.MouseEvent<HTMLElement>, updatedFormats: string[]) => {
+    
 
-        setFormats(updatedFormats);
+       console.log("handleFormatChage: updatedFormats is", updatedFormats);
+
+      // setFormats( (prevToggleformats) =>  updatedFormats ); 
+      
+      setFormats( (prevToggleformats: (null |string[] | undefined)) =>  updatedFormats );
+  
     }
 
     return (
@@ -70,9 +77,14 @@ export const MuiButton = () => {
         </ButtonGroup>
 
         <br />
-        <Typography variant='h6' sx={{mb:3, mt: 3}}>ToggleButton examples - function like toggle buttons used in Word</Typography>
+        <Typography variant='h6' sx={{mb:3, mt: 3}}>ToggleButton examples - function like toggle buttons used in Word.
+            <br />
+            Note how the onChange handler is on the ToggleButtonGroup.
+            <br />
+            There is an 'exclusive' property that allows only one toggle button to be active.
+        </Typography>
 
-        <ToggleButtonGroup value={toggleFormats} onChange={handleFormatChange}>
+        <ToggleButtonGroup value={toggleFormats} onChange={handleFormatChange} exclusive>
             <ToggleButton value="bold">
                 <FormatBoldIcon />
             </ToggleButton>
