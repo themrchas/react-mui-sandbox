@@ -50,4 +50,8 @@ export default tseslint.config({
 ```
 # Items
 
-## Where is dispaly="bix" defined?
+## Where is dispaly="block" defined?
+
+## sx prop mui.com/system/getting-started/the-sz-prop
+
+## Look at InputBase for props that input types inherit

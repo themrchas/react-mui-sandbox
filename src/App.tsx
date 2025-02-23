@@ -1,5 +1,6 @@
 import {MuiButton} from './components/MuiButton';
 import { MuiTextField } from './components/MuiTextField';
+import { MuiSelect } from './components/MuiSelect';
 
 import './App.css'
 
@@ -9,7 +10,8 @@ function App() {
   return (
     <>
     {/*  <MuiButton></MuiButton> */}
-      <MuiTextField></MuiTextField>
+    {/*  <MuiTextField></MuiTextField> */}
+    <MuiSelect></MuiSelect>
     </>
   )
 }
