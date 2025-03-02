@@ -28,7 +28,7 @@ export const MuiSelect = () => {
             <Select
 
                 displayEmpty
-                labelId="textPlaceholder"
+                labelId="textPlaceholder" //id of the select statement
                 onChange={handleChange}
                 value={country}
                 fullWidth  //Expands the select statement to the size of the parent container

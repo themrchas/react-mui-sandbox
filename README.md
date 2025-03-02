@@ -55,3 +55,5 @@ export default tseslint.config({
 ## sx prop mui.com/system/getting-started/the-sz-prop
 
 ## Look at InputBase for props that input types inherit
+
+## use redux in MuiRadioButton to change error message and radio click
